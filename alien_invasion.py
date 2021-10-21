@@ -19,7 +19,7 @@ def run_game():
             if event.type == pygame.QUIT:   # which listens for an event
                 sys.exit()                  # and does a task if the event occurs
 
-        # make the most recently drawn screen visible
+        # make the most recently drawn screen visible (to create the illusion of smooth movement)
         pygame.display.flip()   # draws an empty screen in this case
 
 run_game()
