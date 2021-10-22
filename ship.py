@@ -18,8 +18,8 @@ class Ship():
         # movement flag
         self.moving_right = False                               # we set False because we don't want the ship to move right by default
         self.moving_left = False                                # we set False because we don't want the ship to move left by default
-        self.moving_up = False                                  # we set False because we don't want the ship to move up by default
-        self.moving_down = False                                # we set False because we don't want the ship to move down by default
+        # self.moving_up = False                                  # we set False because we don't want the ship to move up by default
+        # self.moving_down = False                                # we set False because we don't want the ship to move down by default
 
     def update(self):
         """Update the ship's position based on the movement flag."""
@@ -27,10 +27,10 @@ class Ship():
             self.rect.centerx += 1
         if self.moving_left:
             self.rect.centerx -= 1
-        if self.moving_up:
-            self.rect.centery -= 1
-        if self.moving_down:
-            self.rect.centery += 1
+        # if self.moving_up:
+        #     self.rect.centery -= 1
+        # if self.moving_down:
+        #     self.rect.centery += 1
 
     def blitme(self):
         """Draw the ship at its current location"""
