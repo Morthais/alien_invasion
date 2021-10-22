@@ -35,6 +35,7 @@ def run_game():
     while True:
         """This is the main loop for alien_invasion"""
         gf.check_events(ship)
+        ship.update()
         gf.update_screen(ai_settings, screen, ship, character)
 
 run_game()
