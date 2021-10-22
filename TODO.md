@@ -1,5 +1,4 @@
 TODO: 
-* Limiting the ships range to the screen
 * Refactor check_events function
 
 DONE:
@@ -15,3 +14,4 @@ DONE:
 * Add left and right arrow key movement dynamics to the ship
 * Allow for continuous movement left and right
 * Add a ship_speed_factor to change the tempo of the game
+* Limiting the ships range to the screen

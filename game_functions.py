@@ -1,32 +1,29 @@
 import sys      # sys is used to exit the game when player quits
 import pygame
 
+def check_keydown_events(event, ship):
+    """Respond to keypresses."""
+    if event.key == pygame.K_RIGHT:
+        ship.moving_right = True
+    elif event.key == pygame.K_LEFT:
+        ship.moving_left = True
+                    
+def check_keyup_events(event, ship):
+    if event.key == pygame.K_RIGHT:
+        ship.moving_right = False
+    elif event.key == pygame.K_LEFT:
+        ship.moving_left = False
+
 def check_events(ship):
     """Responds to keypresses and mouse events."""
     # watch for keyboard and mouse events (as declared by pygame.event.get())
     for event in pygame.event.get():                        # this is an event loop
         if event.type == pygame.QUIT:                       # which listens for an event
             sys.exit()                                      # and does a task if event occurs
-
         elif event.type == pygame.KEYDOWN:
-            if event.key == pygame.K_RIGHT:
-                ship.moving_right = True
-            if event.key == pygame.K_LEFT:
-                ship.moving_left = True
-            # if event.key == pygame.K_UP:
-            #     ship.moving_up = True
-            # if event.key == pygame.K_DOWN:
-            #     ship.moving_down = True
-
+            check_keydown_events(event, ship)
         elif event.type == pygame.KEYUP:
-            if event.key == pygame.K_RIGHT:
-                ship.moving_right = False
-            if event.key == pygame.K_LEFT:
-                ship.moving_left = False
-            # if event.key == pygame.K_UP:
-            #     ship.moving_up = False
-            # if event.key == pygame.K_DOWN:
-            #     ship.moving_down = False
+            check_keyup_events(event, ship)
 
 def update_screen(ai_settings, screen, ship, character):
     """Update images on the screen and flip to the new screen."""
