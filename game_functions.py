@@ -1,12 +1,16 @@
 import sys      # sys is used to exit the game when player quits
 import pygame
 
-def check_events():
+def check_events(ship):
     """Responds to keypresses and mouse events."""
     # watch for keyboard and mouse events (as declared by pygame.event.get())
     for event in pygame.event.get():                        # this is an event loop
         if event.type == pygame.QUIT:                       # which listens for an event
             sys.exit()                                      # and does a task if event occurs
+
+        elif event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_RIGHT:
+                ship.rect.centerx += 1
 
 def update_screen(ai_settings, screen, ship, character):
     """Update images on the screen and flip to the new screen."""
