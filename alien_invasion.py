@@ -8,6 +8,7 @@ import pygame   # pygame contains functionality needed to make a game
 import game_functions as gf     # import game_functions I created as the alias gf
 from settings import Settings   # import Settings class I created from settings.py file/module
 from ship import Ship
+from game_character import Character
 
 
 def run_game():
@@ -27,11 +28,14 @@ def run_game():
     ship = Ship(screen)                                         # pass the screen to draw the ship rectangle on
                                                                 # the proper location on the screen surface
 
+    # Make a character. Out of the loop because we only want one.
+    character = Character(screen)
+
     # start the main loop for game
     while True:
         """This is the main loop for alien_invasion"""
         gf.check_events()
-        gf.update_screen(ai_settings, screen, ship)
+        gf.update_screen(ai_settings, screen, ship, character)
 
 run_game()
 

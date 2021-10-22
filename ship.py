@@ -11,7 +11,7 @@ class Ship():
         self.rect = self.image.get_rect()                       # get the rectangle of the ship image
         self.screen_rect = screen.get_rect()                    # get the rectangle of the screen
 
-        # Start each new ship at the bottom center of the screen.
+        # Start the ship at the bottom center of the screen.
         self.rect.centerx = self.screen_rect.centerx            # set the centerx of screen rectangle to the centerx of the ship image
         self.rect.bottom = self.screen_rect.bottom              # set the bottom of the screen rectangle to the bottom of the ship image
 
