@@ -25,7 +25,7 @@ def run_game():
     pygame.display.set_caption("Alien Invasion")                # set display caption
 
     # Make a ship. Out of the loop because we only want one ship.
-    ship = Ship(screen)                                         # pass the screen to draw the ship rectangle on
+    ship = Ship(ai_settings, screen)                                         # pass the screen to draw the ship rectangle on
                                                                 # the proper location on the screen surface
 
     # Make a character. Out of the loop because we only want one.
