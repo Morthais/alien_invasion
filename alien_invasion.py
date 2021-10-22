@@ -11,6 +11,8 @@ def run_game():
     screen = pygame.display.set_mode((1200, 800))   # creates a display window called "screen" which is a surface
     pygame.display.set_caption("Alien Invasion")
 
+    bg_color = (230, 230, 230)  # store a color to fill the screen background
+
     # start the main loop for the game
     while True:
 
@@ -19,7 +21,10 @@ def run_game():
             if event.type == pygame.QUIT:   # which listens for an event
                 sys.exit()                  # and does a task if the event occurs
 
+        screen.fill(bg_color)
+
         # make the most recently drawn screen visible (to create the illusion of smooth movement)
         pygame.display.flip()   # draws an empty screen in this case
 
 run_game()
+
