@@ -11,6 +11,12 @@ def check_events(ship):
         elif event.type == pygame.KEYDOWN:
             if event.key == pygame.K_RIGHT:
                 ship.rect.centerx += 1
+            if event.key == pygame.K_LEFT:
+                ship.rect.centerx -= 1
+            if event.key == pygame.K_UP:
+                ship.rect.centery -= 1
+            if event.key == pygame.K_DOWN:
+                ship.rect.centery += 1
 
 def update_screen(ai_settings, screen, ship, character):
     """Update images on the screen and flip to the new screen."""
