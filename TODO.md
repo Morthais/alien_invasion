@@ -1,5 +1,7 @@
 TODO: 
-* Refactor check_events function
+* Draw different images to display based on the direction of ship movement
+* Make the ship shoot bullets
+* Add aliens into the game
 
 DONE:
 * Create a Pygame Window and responding to user input
@@ -15,3 +17,4 @@ DONE:
 * Allow for continuous movement left and right
 * Add a ship_speed_factor to change the tempo of the game
 * Limiting the ships range to the screen
+* Refactor check_events function
