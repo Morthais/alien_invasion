@@ -4,7 +4,7 @@ Author: Jacob Farr (Morthais)
 Credits: "Python Crash Course" by Eric Matthes
 """
 # import packages
-import pygame   # pygame contains functionality needed to make a game
+import pygame                   # pygame contains functionality needed to make a game
 import game_functions as gf     # import game_functions I created as the alias gf
 from settings import Settings   # import Settings class I created from settings.py file/module
 from ship import Ship
@@ -25,7 +25,7 @@ def run_game():
     pygame.display.set_caption("Alien Invasion")                # set display caption
 
     # Make a ship. Out of the loop because we only want one ship.
-    ship = Ship(ai_settings, screen)                                         # pass the screen to draw the ship rectangle on
+    ship = Ship(ai_settings, screen)                            # pass the screen to draw the ship rectangle on
                                                                 # the proper location on the screen surface
 
     # Make a character. Out of the loop because we only want one.

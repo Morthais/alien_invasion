@@ -4,10 +4,7 @@ This is an Alien Invasion game I built using PyGame whilst following a tutorial 
 
 The purpose of this project was to write a simple game using a Python game framework, which in this case was PyGame. I wanted the game to have the following characteristic: The game should display graphics, The game should take user input from the keyboard or mouse, The game should have moveable objects. This game is a Work-In-Progress.
 
-
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the game being played and a walkthrough of the code.}
-
-[Software Demo Video](http://youtube.link.goes.here)
+[Alien Invasion Demo](https://youtu.be/7WKtAzuqeJY)
 
 # Development Environment
 
