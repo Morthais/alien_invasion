@@ -1,5 +1,4 @@
 TODO: 
-* Draw different images to display based on the direction of ship movement
 * Make the ship shoot bullets
 * Add aliens into the game
 

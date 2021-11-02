@@ -24,7 +24,6 @@ The purpose of this project was to write a simple game using a Python game frame
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
-* Item 1
-* Item 2
-* Item 3
+* Make the ship shoot bullets
+* Add aliens that take damage
+* Build a scoreboard
